@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        body{
+            background: url(./EastNusaTenggara.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        main{
+            margin-top: 10rem;
+            display: flex;
+            justify-content: center;
+        }
+        .logo span{
+            color:aqua;
+        }
+        .container{
+            width: 80%;
+        }
+        fieldset{
+            border:2px solid white;
+            padding:2rem 2rem;
+            margin-bottom: 4rem;
+            transition: 1s;
+        }
+        fieldset:hover{
+            backdrop-filter: blur(10px);
+            transition: 1s;
+
+            h2{
+                text-shadow: 2px 2px 8px black;
+            }
+        }
+        fieldset legend{
+            margin-left:2rem;
+            font-size: 1.5rem;        
+        }
+        @media (max-width:600px){
+            :root{
+        --FONTSIZE1:15px;
+        --FONTSIZE:17px;  
+    }
+        }
+    </style>
+</head>
+<body>
+    <script defer src="./index.js"></script>
+        <header>
+            <a href="#" class="logo">sathish<span>Travel</span></a>
+            <ul class="navbar">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="">Information</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Culture</a></li>
+                <li><a href="#footer">Contact us</a></li>
+                
+            </ul>
+            <div class="h-right">
+                <a href="">Follow us</a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <div class="bx bx-menu" id="menu-icon"><a href=""><i class="fa-sharp fa-solid fa-bars"></i></a></div>
+                
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <fieldset>
+                <legend>East Nusa Tenggara</legend>
+                <h2>East Nusa Tenggara is the southernmost province of Indonesia. It comprises the eastern portion of the Lesser Sunda Islands, facing the Indian Ocean in the south and the Flores Sea in the north. It consists of more than 500 islands, with the largest ones being Sumba, Flores, and the western part of Timor; the latter shares a land border with the separate nation of East Timor. The province is subdivided into twenty-one regencies and the regency-level city of Kupang, which is the capital and largest city.</h2>    <br>
+                <h2>A Christian-majority region, East Nusa Tenggara is the only Indonesian province where Roman Catholicism is the predominant religion. The province has a total land area of 47,179.52 km2 and had a population of 4,683,827 at the 2010 Census and 5,325,566 at the 2020 Census; the official estimate as at mid 2023 was 5,569,068 (comprising 2,784,901 males and 2,784,167 females). Economically, East Nusa Tenggara still remains one of the least developed provinces in Indonesia. It currently focuses on expanding the tourism sector, with the most well-known attractions including Labuan Bajo, Komodo National Park and Mount Kelimutu.</h2>
+            </fieldset>
+            </div>
+        </main>
+</body>
+</html>

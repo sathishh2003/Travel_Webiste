@@ -8,6 +8,8 @@
 :root{
     --TEXTCOLOR:white;
     --BGCOLOR:black;
+    --FONTSIZE1:17px;
+    --FONTSIZE:19px;
     --TEXTCOLOR2:orange;
 
 }
@@ -33,8 +35,10 @@ header{
     color:var(--TEXTCOLOR);
     font-weight: 700;
 }
+
 span{
     color:var(--TEXTCOLOR2);
+    font-size: var(--FONTSIZE2);
 }
 .navbar{
     display: flex;
@@ -42,7 +46,7 @@ span{
 }
 .navbar a{
     color:var(--TEXTCOLOR);
-    font-size: 18px;
+    font-size: var(--FONTSIZE1);
     font-weight: 500;
     margin: 15px 22px;
     transition: all 0.50s ease;
@@ -58,12 +62,12 @@ span{
 }
 .h-right a:first-child{
     color:var(--TEXTCOLOR);
-    font-size: 16px;
+    font-size: var(--FONTSIZE1);
     margin-right: 20px;
 }
 .h-right a{
     vertical-align: middle;
-    font-size: 20px;
+    font-size: var(--FONTSIZE2);
     color:var(--TEXTCOLOR);
     margin-right: 18px;
     margin-left: 5px;
@@ -98,7 +102,7 @@ section{
     background-attachment: fixed;
 }
 .home-txt h5{
-    font-size: 18px;
+    font-size: var(--FONTSIZE1);
     font-weight: 600;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -112,7 +116,7 @@ section{
     margin-bottom: 20px;
 }
 .home-txt p{
-    font-size: 18px;
+    font-size: var(--FONTSIZE1);
     font-weight: 500;
     line-height:  30px;
     color:#ffffffab;
@@ -123,7 +127,7 @@ section{
     padding:11px 35px;
     background: var(--TEXTCOLOR2);
     color:var(--TEXTCOLOR);
-    font-size: 15px;
+    font-size: var(--FONTSIZE1);
     font-weight: 600;
     text-decoration: none;
     border-radius: 5px;
@@ -169,7 +173,7 @@ header.sticky{
     transform: scale(1.2);
 }
 .feature-content h4{
-    font-size: 17px;
+    font-size: var(--FONTSIZE1);
     font-weight: 500;
     cursor:pointer;
     transition: all .50 ease;
@@ -190,7 +194,7 @@ header.sticky{
     border-radius: 10px ;
 }
 .holiday-text h5{
-    font-size: 22px;
+    font-size: var(--FONTSIZE2);
     font-weight: 600;
     color:var(--TEXTCOLOR);
     text-transform: uppercase;
@@ -198,13 +202,13 @@ header.sticky{
     margin-bottom: 20px;
 }
 .holiday-text h2{
-    font-size: 16px;
+    font-size: var(--FONTSIZE1);
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 25px;
 }
 .holiday-text p{
-    font-size: 16px;
+    font-size: var(--FONTSIZE1);
     font-weight: 500;
     line-height:30px;
     color:#ffffffab;
@@ -223,7 +227,7 @@ header.sticky{
     border-radius: 10px ;
 }
 .culture-text h5{
-    font-size: 22px;
+    font-size: var(--FONTSIZE2);
     font-weight: 600;
     color:var(--TEXTCOLOR);
     text-transform: uppercase;
@@ -231,13 +235,13 @@ header.sticky{
     margin-bottom: 20px;
 }
 .culture-text h2{
-    font-size: 16px;
+    font-size: var(--FONTSIZE1);
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 25px;
 }
 .culture-text p{
-    font-size: 16px;
+    font-size:var(--FONTSIZE1);
     font-weight: 500;
     line-height:30px;
     color:#ffffffab;
@@ -247,13 +251,13 @@ header.sticky{
     text-align: center;
 }
 .center-text h2{
-    font-size: 16px;
+    font-size: var(--FONTSIZE1);
     font-weight: 800;
 }
 .tour-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
-    align-items: center; 
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    align-items:stretch;
     gap: 3rem;
     margin-top: 5rem;
 }
@@ -274,18 +278,18 @@ header.sticky{
     position: absolute;
     left:25px;
     bottom:95px;
-    font-size: 18px;
+    font-size: var(--FONTSIZE2);
     font-weight: 500;
 }
 .box h4{
     position: absolute;
     left:25px;
     bottom:65px;
-    font-size: 20px;
+    font-size: var(--FONTSIZE2);
     font-weight: 700;
 }
 .box img:hover{
-    filter:brightness(90%) hue-rotate(50deg);
+    filter:brightness(100%);
     transform:scale(1.04);
     cursor: pointer ;
 }
@@ -305,7 +309,7 @@ header.sticky{
     margin-top: 15px;
 }
 .newsletter-text p{
-    font-size: 16px;
+    font-size: var(--FONTSIZE1);
     font-weight: 500;
     color:#ffffffab;
 }
@@ -333,7 +337,7 @@ gap:1rem;
     flex-direction: column;
 }
 .footer-box h3{
-    font-size: 20px;
+    font-size: var(--FONTSIZE2);
     font-weight: 600;
     margin-bottom: 15px;
 }
@@ -344,7 +348,7 @@ gap:1rem;
 }
 .footer-box a:hover{
     transform:translateX(-5px);
-    color:var(--TEXTCOLOR);
+    color:var(--TEXTCOLOR2);
 }
 .social a{
     display: inline-flex;
@@ -354,10 +358,12 @@ gap:1rem;
     width: 45px;
     background-color: #202020;
     color:var(--TEXTCOLOR);
-    font-size: 20px;
+    font-size: var(--FONTSIZE2);
     border-radius: 50%;
     transition: transform 0.6s;
 }
+
+
 .social a:hover{
     background-color: var(--TEXTCOLOR2);
     color:black;
@@ -369,10 +375,13 @@ gap:1rem;
     text-align: center;
     padding: 20px;
     color:#979797;
-    font-size: 15px;
+    font-size: var(--FONTSIZE1);
 }
 .navbar a:hover{
     color:var(--TEXTCOLOR2);
+}
+.box h6,.box h4{
+    font-size: 24px;
 }
 
 @media (max-width:1700px){
@@ -384,6 +393,14 @@ gap:1rem;
     }
     section{
         padding:50px 8% 40px;
+    }
+    :root{
+        --TEXTCOLOR:white;
+        --BGCOLOR:black;
+        --FONTSIZE1:15px;
+        --FONTSIZE:18px;
+        --TEXTCOLOR2:orange;
+    
     }
 }
 @media (max-width:1200px) {
@@ -399,6 +416,7 @@ gap:1rem;
     .home{
         height:100vh;
     }
+
 }
 
 @media(max-width:1050px){
@@ -413,6 +431,8 @@ gap:1rem;
     }
     #menu-icon{
         display: block;
+        width:2rem;
+
 
     }
     .navbar:hover{
@@ -444,7 +464,18 @@ gap:1rem;
     .navbar.open{
         left: 0;
     }
+    :root{
+        --TEXTCOLOR:white;
+        --BGCOLOR:black;
+        --FONTSIZE1:16px;
+        --FONTSIZE:18px;
+        --TEXTCOLOR2:orange;
+    }
+    .box h6,.box h4{
+        font-size: 22px;
+    }
 }
+
 @media (max-width:800px) {
     .holiday{
         grid-template-columns: 1fr;
@@ -455,6 +486,7 @@ gap:1rem;
     .newsletter-content{
         grid-template-columns: 1fr;
     }
+
 }
 @media (max-width:600px) {
     .home{
@@ -470,5 +502,26 @@ gap:1rem;
     }
     section{
         padding:60px 3% 50px;
+    }
+    :root{
+        --TEXTCOLOR:white;
+        --BGCOLOR:black;
+        --FONTSIZE1:15px;
+        --FONTSIZE:17px;
+        --TEXTCOLOR2:orange;   
+    }
+    #footer{
+        display: grid;
+        margin-left: 20px;
+        grid-template-columns: auto auto;
+    }
+    .logo{
+        font-size:1.5rem;
+    }
+    .navbar a{
+        font-size: 1.4rem;
+    }
+    .box h6,.box h4{
+        font-size: 18px;
     }
 }
