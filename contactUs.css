@@ -8,6 +8,7 @@ body{
     background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(./contactUs.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 100% 100%;
 }
 :root{
     --TEXTCOLOR:white;
@@ -102,4 +103,14 @@ button:active{
     background: black;
     border-color: var(--TEXTCOLOR2);
     color:var(--TEXTCOLOR2);
+}
+@media (max-width:450px){
+    .contanier{
+        display: flex;
+        flex-direction: column;
+        margin-top:8rem;
+    }
+    .infoInput{
+        margin: 2rem 0px;
+    }
 }
