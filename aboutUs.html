@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        main{
+            display: flex;
+            min-height: 85vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 80%;
+            border:2px solid black; 
+            padding:2rem;
+        }
+        body{
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./aboutUs.jpg.crdownload);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        :root{
+        --TEXTCOLOR:white;
+        --BGCOLOR:black;
+        --FONTSIZE1:15px;
+        --FONTSIZE:17px;
+        --TEXTCOLOR2:rgb(0, 57, 0);
+    }
+    img{
+        margin-left: 40px;
+    }
+    h3{
+        text-transform: uppercase;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom:10px;
+    
+    }
+    marquee{
+        background: white;
+        padding-bottom: 10px;
+    }
+    @media(max-width:550px){
+            img{
+                margin-left: 20px;
+            }
+    }
+    </style>
+</head>
+<body>
+    <script defer src="./index.js"></script>
+        <header>
+            <a href="#" class="logo">sk<span>Travels</span></a>
+            <ul class="navbar">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html">Information</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="/IndianCulture.html">Culture</a></li>
+                <li><a href="./contactUs.html">Contact us</a></li>
+                
+            </ul>
+            <div class="h-right">
+                <a href="">Follow us</a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <div class="bx bx-menu" id="menu-icon"><a href=""><i class="fa-sharp fa-solid fa-bars"></i></a></div>
+                
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <h2>Welcome to our travel portfolio website, accessible both on web and mobile. Explore our popular tours and discover the unique experiences we offer.
+
+                    In this section, we provide insights into East Nusa Tenggara and highlight aspects of Indian culture. With over 10 branches across India, we pride ourselves on delivering premium comfort during your travels.
+                    
+                    You can explore our tour offerings in the "Tours" section. Please note that our online booking system is currently under development, but we will update it soon. In the meantime, for trip bookings or more information, feel free to contact us using the details provided in the "Contact" section. We are available to assist you daily from 9:00 AM to 9:00 PM.</h2>
+            </div>
+            
+        </main>
+        <h3>our branches in india</h3>
+        <div>
+            <marquee behavior="row" direction="left">
+                <img src="./Hyderabad-Water-Logo.png" width="100px" height="60px">
+                <img src="./Punjab_tourism_logo_Pakistan_by_assam_artist-03-600x359.png" width="100px" height="60px">
+                <img src="./new delhi-png-image_26228262.png" width="100px" height="80px">
+                <img src="./tamilnadu.jpg" width="100px" height="60px">
+                <img src="./karnataka.png" width="100px" height="60px">
+                <img src="./kerala.jpg" width="100px" height="60px">
+                <img src="./goa.png" width="100px" height="60px">
+                <img src="./kashmir.jpg" width="100px" height="60px">
+                <img src="./patna.png" width="100px" height="60px">
+                <img src="./assam.jpg" width="100px" height="60px">
+            </marquee>
+       </div>
+    </body>
+</html>

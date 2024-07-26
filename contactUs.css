@@ -1,0 +1,105 @@
+main{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(./contactUs.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+:root{
+    --TEXTCOLOR:white;
+    --BGCOLOR:black;
+    --FONTSIZE1:15px;
+    --FONTSIZE:17px;
+    --TEXTCOLOR2:orange;
+}
+.contanier{
+ display: flex;
+ column-gap: 2rem;
+}
+.info{
+    display: grid;
+    gap: 2rem;
+}
+.infoInput{
+    display: grid;
+    border:2px solid var(--TEXTCOLOR2);
+    padding:2rem;
+    transition: 1s;
+    animation: left;
+    animation-duration: 1s;
+}
+.infoBox{
+    border:2px solid var(--TEXTCOLOR2);
+    padding: 20px;
+    font-size: 16px;
+    transition: 1s;
+    animation: right;
+    animation-duration: 1s;
+}
+@keyframes left {
+        from{
+            transform: translateX(50px);
+            color: transparent;
+            border: none;
+            background-color: transparent;
+        }
+}
+@keyframes right {
+        from{
+            transform: translateX(-50px);
+            color: transparent;
+            border: none;
+            background-color: transparent;
+        }
+}
+.infoBox:hover{
+        transform: scale(1.1);
+        transition: 1s;
+        backdrop-filter: blur(15px);
+    
+}
+.infoInput:hover{
+    backdrop-filter: blur(15px);
+    transition: 1s;
+}
+h5{
+    margin-top: 10px;
+    margin-left: 2rem;
+}
+h2{
+    color:var(--TEXTCOLOR2);
+}
+button{
+    height: 35px;
+    background-color: var(--TEXTCOLOR2);
+    color:white;
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 2px solid var(--TEXTCOLOR1);
+    border-radius: 3px;
+}
+input{
+    height:35px;
+    padding-left: 1rem;
+}
+textarea{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    resize: none;
+}
+button:hover{
+  /*   background-color: rgb(248, 191, 86); */
+  border: 2px solid var(--TEXTCOLOR);
+    color:black;
+}
+button:active{
+    background: black;
+    border-color: var(--TEXTCOLOR2);
+    color:var(--TEXTCOLOR2);
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        body{
+            background: url(./indiaBackgroundImage.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        main{
+            margin-top: 10rem;
+        }
+        .cul img{
+            float: left;
+        }
+        #kadhakali{
+            max-width: 400px;
+            max-height:230px;
+            margin-right: 2rem;
+        }   
+        .container{
+            align-items: center;
+            width: 80%;
+            border:2px solid black;
+            padding:3rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap:2rem;
+            margin-bottom: 6rem;
+            transition: 1s;
+        }
+        .container:hover{
+            text-shadow: 2px 2px 8px black;
+            backdrop-filter: blur(5px);
+            transition: 1s;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+        }
+        #jallikattu{
+        max-width: 500px;
+        max-height: 300px;
+        float: right;
+        margin-left: 2rem;
+        }
+        #diwali{
+            width: 600px;
+            height:350px;
+            margin-right: 2rem;
+            float: left;
+        }  
+        #ganesh{
+            width: 500px;
+            height:250px;
+            margin-right: 2rem;
+            float: right;
+        }  
+        #holi{
+            width:500px;
+            height:250px;
+            margin-right: 2rem;
+            float: left;
+        }
+        :root{
+        --TEXTCOLOR:black;
+        --BGCOLOR:black;
+        --FONTSIZE1:15px;
+        --FONTSIZE:17px;
+        --TEXTCOLOR2:gray;
+    }
+    .navbar a,.h-right a{
+        color:gray;
+        font-weight: 600;
+    }
+    img{
+        transform: scale(1);
+        transition: 1s;
+        border:2px solid white;
+    }
+    img:hover{
+        transform: scale(1.1);
+        transition: 1s;
+        filter: brightness(100%);
+    }
+    @media (max-width:800px){
+        #kadhakali{
+            width: 300px;
+            height:170px;
+        }   
+        #jallikattu{
+        width: 300px;
+        height: 150px;
+        }
+        #diwali{
+            width: 300px;
+            height:150px;
+        }  
+        #ganesh{
+            width: 350px;
+            height:200px;
+        }
+        #holi{
+            width:350px;
+            height:200px;
+        }     
+    }
+    @media (max-width:450px){
+        #kadhakali{
+            width: 250px;
+            height:150px;
+        }   
+        #jallikattu{
+        width: 250px;
+        height: 150px;
+        }
+        #diwali{
+            width: 250px;
+            height:150px;
+        }  
+        #ganesh{
+            width: 250px;
+            height:150px;
+        }
+        h2{
+            font-size: var(--FONTSIZE1);
+        }
+        :root{
+        --TEXTCOLOR:white;
+        --BGCOLOR:black;
+        --FONTSIZE1:17px;
+        --FONTSIZE:19px;
+        --TEXTCOLOR2:orange;
+    }
+    #holi{
+            width:250px;
+            height:150px;
+        } 
+    }
+    </style>
+</head>
+<body>
+    <script defer src="./index.js"></script>
+        <header>
+            <a href="#" class="logo">sk<span>Travels</span></a>
+            <ul class="navbar">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">Information</a></li>
+                <li><a href="./aboutUs.html">About us</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#footer">Contact us</a></li>
+                
+            </ul>
+            <div class="h-right">
+                <a href="">Follow us</a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <div class="bx bx-menu" id="menu-icon"><a href=""><i class="fa-sharp fa-solid fa-bars"></i></a></div>
+                
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <h2>Indian culture is incredibly diverse and rich, shaped by thousands of years of history, traditions, and regional variations. It encompasses a wide range of art forms, languages, religions, and customs. From the vibrant festivals like Diwali and Holi to classical music and dance forms such as Bharatanatyam and Kathak, Indian culture is known for its colorful and celebratory nature. The country’s cuisine, which varies from region to region, is also a significant aspect of its cultural identity, characterized by a variety of spices and flavors. At its core, Indian culture values family, spirituality, and respect for tradition, making it a tapestry of profound and enduring traditions.</h2>
+                
+                <div class="kadhakali cul">
+                    <img src="./kadhakali.jpg" id="kadhakali" loading="lazy">
+                    
+                    <h2><b><i><mark>&nbsp;KATHAKALI&nbsp;</mark> is a traditional Indian dance-drama from Kerala, known for its elaborate costumes, intricate makeup, and expressive storytelling.</i></h2>
+                        
+                    <ul>
+                        <li>Makeup: Colorful and symbolic face painting that indicates character traits.</li>
+                        <li>Costume: Ornate attire that defines the role and status of characters.</li>
+                        <li>Mudras: Hand gestures used to convey meaning.</li>
+                        <li>Rasa: Emotional expressions that are central to the performance.</li>
+                        <li>Abhinaya: The art of expression through gestures and facial expressions.</li>
+                    </ul>
+                        <h2>Kathakali performances often depict stories from Hindu epics, blending dramatic dance with rich musical traditions.</h2>
+                </div>
+
+                <div class="jallikattu cul">
+             
+                    <img src="./jallikattu.jpg" id="jallikattu" loading="lazy">
+                    <h2><b><i><mark>&nbsp;JALLIKATTU&nbsp;</mark> is a traditional bull-taming sport celebrated primarily in the Indian state of Tamil Nadu. The event is held during the Pongal festival, which marks the harvest season. Participants, known as "bull tamers," attempt to hold onto the bull's hump and ride or control it as it attempts to run free. The bulls are specially bred for this event, and the competition can be both thrilling and dangerous.</i></h2>                
+                    <h2>Jallikattu has deep cultural and historical roots, dating back over 2,000 years. It is often seen as a way to honor and celebrate the strength and agility of the bulls, which are considered sacred and integral to agricultural life in Tamil Nadu.</h2>
+                        <h2>The sport has been controversial, particularly regarding animal rights and safety concerns. Over the years, there have been debates and legal battles over its ethical implications and the treatment of the animals involved. Despite the controversies, Jallikattu remains a significant part of Tamil cultural heritage and continues to be passionately supported by many in the region.</h2>
+                        
+                    </div>
+                    <br><br>
+                    <div class="diwali cul">
+             
+                    <img src="./diwali.jpg" id="diwali" loading="lazy">
+                    <h2><b><i><mark>&nbsp;Diwali,&nbsp;</mark> also known as Deepavali, is a major Hindu festival celebrated across India and by Indian communities worldwide. It typically takes place in October or November and lasts for five days. The festival is renowned for its vibrant decorations, including oil lamps (diyas) and colorful lights.</i></h2>                
+                    <h2>The celebration honors the victory of light over darkness and good over evil. Key traditions include cleaning and decorating homes, worshipping the goddess Lakshmi for prosperity, and sharing sweets and gifts with family and friends. Fireworks displays and communal feasts add to the festive atmosphere. Diwali is a time for joy, renewal, and reflection.</h2>
+                    </div>
+             
+                    <br><br>
+                    <div class="ganesh cul">
+             
+                    <img src="./Ganesh chaturthi.jpg" id="ganesh" loading="lazy">
+                    <h2><b><i><mark>&nbsp;Ganesh Chaturthi,&nbsp;</mark> also known as Vinayaka Chaturthi, is a significant Hindu festival celebrating the birth of Lord Ganesha, the elephant-headed god of wisdom, prosperity, and new beginnings. The festival typically takes place in August or September and lasts for 10 days.</i></h2>                
+                    <h2>During Ganesh Chaturthi, people create or purchase clay idols of Ganesha, which are decorated with vibrant colors and placed in homes or public pandals (temporary structures). The festival involves various rituals, including prayers, devotional songs, and offerings of sweets like modaks, which are believed to be Ganesha's favorite.</h2>
+                    <h2>On the final day, known as Anant Chaturdashi, the idols are immersed in water, symbolizing Ganesha's return to his celestial abode. This immersion, or visarjan, is accompanied by grand processions and chants of "Ganpati Bappa Morya" (a call to return next year).</h2>
+                    <h2>Ganesh Chaturthi is marked by its lively and joyful celebrations, reflecting the deep reverence and affection devotees have for Lord Ganesha.</h2>
+                </div>
+
+                    <br><br>
+                    <div class="holi cul">
+             
+                    <img src="./holi.jpg" id="holi" loading="lazy">
+                    <h2><b><i><mark>&nbsp;Holi,&nbsp;</mark> known as the "Festival of Colors," is a vibrant and joyful Hindu festival celebrated in India and by Indian communities worldwide. It typically takes place in March, marking the arrival of spring and the victory of good over evil.</i></h2>                
+                    <h2>The festival is famous for its lively and colorful celebrations, where people throw colored powders and water at each other, dance, sing, and share festive foods. Holi is also a time for socializing and mending relationships, as people come together to celebrate and enjoy each other’s company.</h2>
+                    <h2>Holi has deep cultural and religious significance. It commemorates various legends, including the burning of the demoness Holika and the playful antics of Lord Krishna with his devotees. The festival begins with Holika Dahan, a ritualistic bonfire on the eve of Holi, symbolizing the triumph of good over evil.</h2>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
