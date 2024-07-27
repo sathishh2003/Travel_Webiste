@@ -7,8 +7,6 @@ window.addEventListener("scroll",()=>{
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector(".navbar");
 
-navbar.style.display = 'none';
-
 menu.onclick = () => {
 
         if(navbar.style.display === 'none'){

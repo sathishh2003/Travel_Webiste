@@ -400,8 +400,7 @@ gap:1rem;
         --BGCOLOR:black;
         --FONTSIZE1:15px;
         --FONTSIZE:18px;
-        --TEXTCOLOR2:orange;
-    
+        --TEXTCOLOR2:orange;   
     }
 }
 @media (max-width:1200px) {
@@ -435,8 +434,6 @@ gap:1rem;
         display: block;
         width:2rem;
         font-size: 20px;
-
-
     }
     .navbar:hover{
         color:var(--TEXTCOLOR2);
@@ -456,6 +453,7 @@ gap:1rem;
         transition: all .50s ease;
         background-color: rgba(0, 0, 0, 0.8);
         transition: 1s;
+        display: none;
     }
 
     .navbar a{
