@@ -7,10 +7,16 @@ window.addEventListener("scroll",()=>{
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector(".navbar");
 
+navbar.style.display = 'none';
+
 menu.onclick = () => {
-        menu.classList.toggle('bx-x');
-        navbar.style.left = '50%';
-        navbar.classList.toggle('open');
+
+        if(navbar.style.display === 'none'){
+            navbar.style.display = 'block';
+        }
+        else{
+            navbar.style.display = 'none';
+        }
 
     };
 
