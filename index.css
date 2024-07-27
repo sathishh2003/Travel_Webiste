@@ -12,7 +12,6 @@
     --FONTSIZE1:17px;
     --FONTSIZE:19px;
     --TEXTCOLOR2:orange;
-
 }
 body{
     color:var(--TEXTCOLOR);
@@ -84,6 +83,8 @@ span{
     cursor:pointer;
     z-index:1001;
     display: none;
+    padding-left: 6px;
+    
 }
 section{
     padding:70px 17% 60px;
